@@ -8,11 +8,11 @@ function allArray_pairs(boxesarray){
     for (let i = 0; i < boxesarray.length; i++){
         for (let j = 0; j < boxesarray.length; j++){
             pairs.push([boxesarray[i],boxesarray[j]]);
-            console.log(boxesarray[i]);
-
         }
     }
-return pairs
+    
+    return pairs
+    
 }
 
 
