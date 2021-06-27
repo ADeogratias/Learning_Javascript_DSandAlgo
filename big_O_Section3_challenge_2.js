@@ -17,6 +17,28 @@ function allArray_pairs(boxesarray){
 }
 
 
+// Udemy instructors approach
+// log all pairs of array
+function logAllPairsOfArray(array){
+    for (let i = 0; i < array.length; i++){
+        for (let j = 0; j < array.length; j++){
+            console.log(array[i],array[j]);
+        }
+    }
+}
+
+// ES5 syntax
+function logAllPairsOfArray(boxes){
+    boxes.forEach(function(firstBox){
+        boxes.forEach(function(secondBox){
+            console.log(firstBox, secondBox);
+        });
+    });
+}
+
+
+
+
 // driver codes
 
 let pairz = allArray_pairs(boxes);
@@ -24,3 +46,8 @@ let pairz = allArray_pairs(boxes);
 for (let i = 0; i < pairz.length; i++) {
     console.log(pairz[i]);
 }
+
+// uncomment these to run instructors approach to logging all array pairs
+//console.log(logAllPairsOfArray(boxes));
+
+
