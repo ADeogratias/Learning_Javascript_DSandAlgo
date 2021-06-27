@@ -1,6 +1,7 @@
 // log all pairs array
 const boxes = [1,2,3,4,5];
 
+// runtime Big O of n^2
 //function to create pairs from an array
 function allArray_pairs(boxesarray){
     let pairs=[];
@@ -12,7 +13,7 @@ function allArray_pairs(boxesarray){
     }
     
     return pairs
-    
+
 }
 
 
