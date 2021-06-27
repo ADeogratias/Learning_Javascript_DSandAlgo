@@ -1,7 +1,9 @@
+
 // log all pairs array
 const boxes = [1,2,3,4,5];
 
-// runtime Big O of n^2
+// my approach
+// runtime Big O of n^2 - quadratic time
 //function to create pairs from an array
 function allArray_pairs(boxesarray){
     let pairs=[];
@@ -19,13 +21,13 @@ function allArray_pairs(boxesarray){
 
 // Udemy instructors approach
 // log all pairs of array
-function logAllPairsOfArray(array){
-    for (let i = 0; i < array.length; i++){
-        for (let j = 0; j < array.length; j++){
-            console.log(array[i],array[j]);
-        }
-    }
-}
+//function logAllPairsOfArray(array){
+//    for (let i = 0; i < array.length; i++){
+//        for (let j = 0; j < array.length; j++){
+//            console.log(array[i],array[j]);
+//        }
+//    }
+//}
 
 // ES5 syntax
 function logAllPairsOfArray(boxes){
@@ -41,13 +43,13 @@ function logAllPairsOfArray(boxes){
 
 // driver codes
 
-let pairz = allArray_pairs(boxes);
+//let pairz = allArray_pairs(boxes);
 
-for (let i = 0; i < pairz.length; i++) {
-    console.log(pairz[i]);
-}
+//for (let i = 0; i < pairz.length; i++) {
+//    console.log(pairz[i]);
+//}
 
 // uncomment these to run instructors approach to logging all array pairs
-//console.log(logAllPairsOfArray(boxes));
+logAllPairsOfArray(boxes);
 
 
