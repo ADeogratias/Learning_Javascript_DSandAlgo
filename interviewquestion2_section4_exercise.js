@@ -66,6 +66,10 @@ const common_items = (array1, array2) => {
 console.log(common_items(array1, array2));
 
 
+//About to implement the 4th solution. It is the one from the course
+//******* Fourth solution **********/
+// But this is what I am able to work on and I guess it has a big O of a + b
+
 
 
 
