@@ -1,4 +1,31 @@
+//Given 2 arrays, create a function that
+//lets a user know(true/false) whether
+//these 2 arrays contain any common items
+//For example 
+//const array1 = ['a','b','c','x'];
+//const array2 = ['z','y','i'];
+//should return False.
+//-------------
+//const array1 = ['a','b','c','x'];
+//const array3 = ['z','y','x'];
+//should return True.
 
+// 2 parameters - arrays - no size limit 
+// return true or false 
+
+// ****** First solution ********
+// brute force approach should be a Big O N^2  
+// we compare each element from the first array
+// with all the elements of the second array
+
+// ****** Second solution ********
+// binary search since the arrays look sorted
+// should be a Big O N log N  
+// we searh each element from the first array
+// in the second array and it is basically a repetition
+
+
+//******* Third solution **********/
 // I need to check the solution suggested from the course I am taking.
 // But this is what I am able to work on and I guess it has a big O of a + b
 // a being size of array1 and b being size of array2
