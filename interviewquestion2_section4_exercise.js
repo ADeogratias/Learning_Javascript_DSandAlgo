@@ -68,9 +68,31 @@ console.log(common_items(array1, array2));
 
 //About to implement the 4th solution. It is the one from the course
 //******* Fourth solution **********/
-// But this is what I am able to work on and I guess it has a big O of a + b
+// It is based on changing one of the arrays into a hashmap and 
+// and doing a look up that is basically going to help with time complexity
 
+// implementation goes like
+//  array1 ==> obj {
+//  a:true,
+//  b:true,
+//  c:true,
+//  x:true
+//}
+// array2[index]=== obj.properties
 
+containsCommonItem = (array1, array2) =>{
+  // loop through first  and create object
+  // where properties === items in the array
+  // loop through second array and check if item 
+  // in second array exists on created object.
+  let mapArray = {};
+  for (let element = 0; i< array1.length; element++){
+    if(!mapArray.a =[];{})
+  }
+}
+
+// the function above run time is 
+// O(a + b)
 
 
 // had a bug of not having a working if condition
