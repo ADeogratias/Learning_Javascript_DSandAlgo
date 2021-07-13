@@ -110,6 +110,8 @@ containsCommonItem = (array1, array2) =>{
 
 };
 
+
+//******* Fifth solution **********/
 // using javascript built in functions you can do the above with clean codes
 // in a more readable way
 
