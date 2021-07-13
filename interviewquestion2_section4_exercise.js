@@ -83,12 +83,21 @@ console.log(common_items(array1, array2));
 containsCommonItem = (array1, array2) =>{
   // loop through first  and create object
   // where properties === items in the array
+  let map = {};
+  
+  for (let element = 0; i< array1.length; element++){
+    if(!map[element]){
+      const item =array1[element];
+      map[item]= true;
+    }
+  }
+
+  console.log(map);
+
   // loop through second array and check if item 
   // in second array exists on created object.
-  let mapArray = {};
-  for (let element = 0; i< array1.length; element++){
-    if(!mapArray.a =[];{})
-  }
+
+
 }
 
 // the function above run time is 
