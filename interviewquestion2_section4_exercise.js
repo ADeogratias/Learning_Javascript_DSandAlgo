@@ -85,9 +85,9 @@ containsCommonItem = (array1, array2) =>{
   // where properties === items in the array
   let map = {};
   
-  for (let element = 0; i< array1.length; element++){
-    if(!map[element]){
-      const item =array1[element];
+  for (let arrayEl = 0; arrayEl< array1.length; arrayEl++){
+    if(!map[array1[arrayEl]]){
+      const item =array1[arrayEl];
       map[item]= true;
     }
   }
@@ -95,7 +95,7 @@ containsCommonItem = (array1, array2) =>{
   console.log(map);
 
   // loop through second array and check if item 
-  // in second array exists on created object.
+  // in second array exists on created object. =[];{}
 
 
 }
