@@ -105,7 +105,14 @@ containsCommonItem = (array1, array2) =>{
 
   return false;
 
-}
+};
+
+// using javascript built in functions you can do the above with clean codes
+// in a more readable way
+
+containsCommonItem2 = (array1, array2) =>{
+  return array1.some(item => array2.includes(item));
+};
 
 // the function above run time is 
 // O(a + b) time complexity
