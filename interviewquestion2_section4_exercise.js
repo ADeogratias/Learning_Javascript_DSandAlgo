@@ -17,6 +17,7 @@
 // brute force approach should be a Big O N^2  
 // we compare each element from the first array
 // with all the elements of the second array
+// Big O (1) - space complexity 
 
 // ****** Second solution ********
 // binary search since the arrays look sorted
@@ -29,6 +30,7 @@
 // I need to check the solution suggested from the course I am taking.
 // But this is what I am able to work on and I guess it has a big O of a + b
 // a being size of array1 and b being size of array2
+// Big O (1) - space complexity 
 
 // working function
 const array1 = ['a','b','c','x'];
@@ -70,6 +72,7 @@ console.log(common_items(array1, array2));
 //******* Fourth solution **********/
 // It is based on changing one of the arrays into a hashmap and 
 // and doing a look up that is basically going to help with time complexity
+// Big O (a) - space complexity 
 
 // implementation goes like
 //  array1 ==> obj {
