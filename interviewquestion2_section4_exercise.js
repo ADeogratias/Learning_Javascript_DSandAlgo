@@ -119,6 +119,11 @@ containsCommonItem2 = (array1, array2) =>{
 
 // the function above run time is 
 // O(a + b) time complexity
+// Big O (a) - space complexity 
+
+
+// then you talk about modularing your codes.
+// having a function that does one particular task and does it very well.
 
 
 // had a bug of not having a working if condition
