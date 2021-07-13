@@ -107,7 +107,7 @@ containsCommonItem = (array1, array2) =>{
 }
 
 // the function above run time is 
-// O(a + b)
+// O(a + b) time complexity
 
 
 // had a bug of not having a working if condition
