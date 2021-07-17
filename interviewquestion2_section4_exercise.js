@@ -110,6 +110,11 @@ containsCommonItem = (array1, array2) =>{
 
 };
 
+// the function above run time is 
+// O(a + b) time complexity
+
+
+
 
 //******* Fifth solution **********/
 // using javascript built in functions you can do the above with clean codes
