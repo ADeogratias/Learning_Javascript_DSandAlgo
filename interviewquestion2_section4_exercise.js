@@ -129,7 +129,7 @@ containsCommonItem2 = (array1, array2) =>{
 // Big O (a) - space complexity 
 
 
-// then you talk about modularing your codes.
+// then you talk about modularizing your codes.
 // having a function that does one particular task and does it very well.
 
 
