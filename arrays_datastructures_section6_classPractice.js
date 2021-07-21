@@ -69,13 +69,28 @@ this.alert("hello") // print hello in a dialog box on your screen
 
 class Player {
     constructor(name, type) {
+        console.log(this);
         this.name = name;
         this.type = type;
     }
 
     //creating a method to introduce
     introduce() {
-        console.log("Hi I am ${this.name}, I'm a ${this.type}")
+        console.log(`Hi I am ${this.name}, I'm a ${this.type}`);
     }
 }
+
+// Lets copy player and add on to it
+// We create a player that's a wizard
+class Wizard extends Player {
+    constructor(name, type) {
+        super(name, type);
+    }
+
+    play() {
+        console.log(`Yesss, I'm a ${this.type}`);
+    }
+}
+
+const wizard1 = new Wizard('Meduisa','Black Magic');
 
