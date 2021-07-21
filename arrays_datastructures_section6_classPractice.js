@@ -65,4 +65,17 @@ this.alert("hello") // print hello in a dialog box on your screen
 
 // ******* instantiation *******
 // instation is when you make a copy of an object and reuse the code
+// It's making instances or multiple copies of an object.
+
+class Player {
+    constructor(name, type) {
+        this.name = name;
+        this.type = type;
+    }
+
+    //creating a method to introduce
+    introduce() {
+        console.log("Hi I am ${this.name}, I'm a ${this.type}")
+    }
+}
 
