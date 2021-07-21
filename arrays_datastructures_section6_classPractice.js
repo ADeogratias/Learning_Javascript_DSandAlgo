@@ -69,7 +69,7 @@ this.alert("hello") // print hello in a dialog box on your screen
 
 class Player {
     constructor(name, type) {
-        console.log(this);
+        console.log('player', this);
         this.name = name;
         this.type = type;
     }
@@ -84,7 +84,11 @@ class Player {
 // We create a player that's a wizard
 class Wizard extends Player {
     constructor(name, type) {
-        super(name, type);
+        // putting a console.log('wizard', this) throws an error
+        // Needs to call super contructor in derived class
+        // console.log('wizard', this)
+        super(name, type)
+        console.log('wizard', this) //works well
     }
 
     play() {
@@ -92,5 +96,6 @@ class Wizard extends Player {
     }
 }
 
-const wizard1 = new Wizard('Meduisa','Black Magic');
+const wizard1 = new Wizard('Meduisa','Black Magic');// the execution runs player class first, then wizard
+const wizard2 = new Wizard('Shelly', 'Healer');
 
