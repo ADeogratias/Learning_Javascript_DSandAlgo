@@ -128,7 +128,7 @@ console.log(common_items(array1, array2));
 //}
 // array2[index]=== obj.properties
 
-containsCommonItem = (array1, array2) =>{
+const containsCommonItem = (array1, array2) =>{
   // loop through first  and create object
   // where properties === items in the array
   let map = {};
@@ -165,7 +165,7 @@ containsCommonItem = (array1, array2) =>{
 // using javascript built in functions you can do the above with clean codes
 // in a more readable way
 
-containsCommonItem2 = (array1, array2) =>{
+const containsCommonItem2 = (array1, array2) =>{
   return array1.some(item => array2.includes(item));
 };
 
