@@ -19,8 +19,8 @@ function myReversefunc(str) {
     return reversedString;
 }
 
-// Trying to improve the function above for readability
 
+// Trying to improve the function above for readability
 const myReversefunc2 = (str) => {
     let str2Reverse = str.split('');
     let reversedStr = [];
@@ -32,5 +32,27 @@ const myReversefunc2 = (str) => {
     return reversedStr.join('');
 };
 
+
 // using Javascript reverse function would improve readability more
 const reversefunc2 = (str) => str.split('').reverse();
+
+
+// Solution proposed from Andrei's course
+function reverse(str) {
+    //check input
+    if(!str || str.length< 2 || typeof str !== 'string') {
+        return 'Hmmm that is not good';
+    }
+
+    const backwards = [];
+    const totalItems = str.length - 1;
+    for (let i = totalItems; i = 0;  i--){
+        backwards.push(str[i]);
+    }
+    console.log(backwards)
+
+    return backwards.join('');
+    // return backwards.toString();
+}
+
+reverse('Hi My name is Andrei')
