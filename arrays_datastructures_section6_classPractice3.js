@@ -31,3 +31,6 @@ const myReversefunc2 = (str) => {
 
     return reversedStr.join('');
 };
+
+// using Javascript reverse function would improve readability more
+const reversefunc2 = (str) => str.split('').reverse();
