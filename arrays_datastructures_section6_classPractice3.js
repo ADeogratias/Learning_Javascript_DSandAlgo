@@ -56,3 +56,15 @@ function reverse(str) {
 }
 
 reverse('Hi My name is Andrei')
+
+//extra different ways proposed by the course
+// using built in functions
+function reverse2(str) {
+    return str.split('').reverse().join('');
+}
+
+// using modern cleaner way to make this function
+// with the ES6
+
+const reverse3 = str => str.plit('').reverse().join('');
+const reverse4 = str => [...str].reverse().join('');
