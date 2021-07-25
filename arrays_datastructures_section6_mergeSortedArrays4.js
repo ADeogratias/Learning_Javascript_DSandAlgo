@@ -22,18 +22,36 @@ mergeSortedArrays([0,3,4,31], [4,6,30]);
 
 const mergeSortedArrays = (array1, array2) => {
     mergedSortedArray = [];
-    let array1Length = array1.length - 1;
+    let maxCount = array1.length - 1;
     let array2Length = array2.lenght - 1;
     let leftPointer = 0;
-    let rightPointer = array2Length;
+    let rightPointer = 0;
     // let count = 0;
-    let maxCount = array1Length;
     if (maxCount < array2Length) {
         maxCount = array2Length;
     }
-    for(let i = 0; i < maxCount; i++){
+    for(let i = 0; i <= maxCount; i++){
         
+        let item1 = array1[leftPointer];
+        let item2 = array2[rightPointer]; 
+
+        if ( isGreater(item1, item2)){
+            mergedSortedArray.push(item1);
+            leftPointer++;
+        }
+        else{
+            mergedSortedArray.push(item2);
+            rightPointer++;
+        }
+
+        if (isGreater(rightPointer, maxCount)){
+
+        }
     }
 };
+
+
+const isGreater = (item1, item2) => item1 >= item2;
+
 
 // to be continueed...
