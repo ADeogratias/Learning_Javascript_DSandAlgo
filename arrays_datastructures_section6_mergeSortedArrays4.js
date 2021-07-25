@@ -63,46 +63,25 @@ const isGreater = (item1, item2) => item1 > item2;
 
 const mergeSortedArrays = (array1, array2) => {
     let mergedSortedArray = [];
-    let maxCount = array1.length;
-    let array2Length = array2.length;
+    let ar1Len = array1.length;
+    let ar2Len = array2.length;
     
-    console.log ("array 1 length: " + maxCount);
-    console.log ("array 2 length: " + array2Length);
-
     let leftPointer = 0;
     let rightPointer = 0;
-    // let count = 0;
-    if (maxCount < array2Length) {
-        maxCount = array2Length;
-    }
-    while(rightPointer < array2Length | leftPointer < maxCount){
+    
+    while(rightPointer < ar2Len | leftPointer < ar1Len){
         
         let item1 = array1[leftPointer];
         let item2 = array2[rightPointer]; 
 
-        // if (isGreater(maxCount === leftPointer & ))
-
-        if ( isGreater(item2, item1) | rightPointer === array2Length ){
+        if ( isGreater(item2, item1) | rightPointer === ar2Len ){
             mergedSortedArray.push(item1);
-            console.log ("array 1 received: " + item1);
-            console.log ("LeftPointer before: " + leftPointer);
             leftPointer++;
-            console.log ("after: " + leftPointer);
-
-            // if (isGreater(maxCount, leftPointer)){
-            //     leftPointer++;
-            // }
 
         }
         else {
             mergedSortedArray.push(item2);
-            console.log ("array 2 received: " + item2);
-            console.log ("RightPointer before: " + rightPointer);
             rightPointer++;
-            console.log ("after: " + rightPointer);
-            // if ( isGreater(array2Length, rightPointer)){
-            //     rightPointer++;
-            // }
         }
     }
     return mergedSortedArray;
