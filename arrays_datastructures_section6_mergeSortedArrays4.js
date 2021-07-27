@@ -98,10 +98,12 @@ console.log(mergeSortedArrays([0,3,4,31], [4,6,30]));
 // How the solution from the video solves the problem
 // Solution from Andrei
 
-function mergedSortedArrays(array1, array2) {
+function mergeSortedArrays(array1, array2) {
     const megerdArray = [];
     let array1Item = array1[0];
     let array2Item = array2[0];
+    let i = 1;
+    let j = 1;
 
     //Check input
     if (array1.length === 0) {
@@ -113,10 +115,19 @@ function mergedSortedArrays(array1, array2) {
     }
 
     while (array1Item || array2Item) {
-        
+        if (! array2Item || array1Item < array2Item) {
+            megerdArray.push(array1Item)
+            array1Item = array1[i];
+            i++
+        } else {
+            megerdArray.push(array2Item);
+            array2Item = array2[j];
+            j++;
+        }
     }
 
     return megerdArray;
 }
 
 mergeSortedArrays([0,3,4,31], [4,6,30]);
+mergeSortedArrays([0,3,4], [4,6,30]);
